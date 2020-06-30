@@ -1,0 +1,141 @@
+h1, h4 {
+    color: #ffffff;
+    transition: color 0.5s ease-in-out;
+    margin: 0%;
+}
+
+h1 {
+    font-size: 700%;
+    width: 100%;
+    height: 100%;
+}
+
+.center {
+    padding-top: 7em;
+}
+
+.js-clock {
+    display: inline-block;
+}
+
+span {
+    color: #ffffff;
+    transition: color 0.5s ease-in-out;
+    
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+}
+body {
+    color: #34495e;
+    background-color: #2c3e50;
+    text-align: center;
+}
+
+input {
+    margin: 1%;
+    background: transparent;
+    color: #ffffff;
+    text-align:center;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom-width: 0.1em;
+    border-bottom-color: #ffffff;
+}
+
+input::placeholder {
+    font-size: 100%;
+    background: transparent;
+    color: #ffffff;
+    text-align:center;
+}
+
+input:focus {
+    outline: none;
+}
+
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 3em;
+    font-size: 35%;
+    color: #ffffff;
+    text-align: center;
+}
+
+.in-user {
+    width: 9em;
+    font-size: 200%;
+}
+.in-todo {
+    width: 6em;
+    font-size: 170%;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.clicked {
+    color: #7f8c8d;
+}
+
+.form,
+.greetings {
+    display: none;
+    border: none;
+    color: #ffffff;
+    font-size: 170%
+}
+
+.greetings {
+    font-size: 300%;
+}
+
+.showing {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
+
+.js-weather {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 150%;
+}
+
+.js-toDoForm{
+    margin: 1%;
+}
+
+.js-toDoList {
+    font-size: 200%;
+    padding: 0%;
+    margin: 0%;
+}
+
+.toDo_span:hover {
+    cursor: pointer;
+    border-bottom: solid 0.1em;
+}
