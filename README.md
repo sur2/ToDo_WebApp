@@ -1,2 +1,2 @@
 # ToDo_WebApp
-To Do List를 Web  Browser로 화면에 출력하는 Application입니다.
+To Do List를 Web Browser로 만들 수 있는 Application입니다.
