@@ -11,9 +11,9 @@ function getTime() {
             minutes < 10 ? `0${minutes}` : minutes}:${
                 seconds < 10 ? `0${seconds}` : seconds}`;
 
-    const dayInfo = date.getFullYear() + " " +
-        ((date.getMonth() + 1 < 10) ? "0"+(date.getMonth() + 1) : (date.getMonth() + 1)) + " " +
-        ((date.getDate() + 1 < 10) ? "0"+(date.getDate() + 1) : (date.getDate() + 1));
+    const dayInfo = date.getFullYear() + ". " +
+        ((date.getMonth() + 1 < 10) ? "0"+(date.getMonth() + 1)+"." : (date.getMonth() + 1)+".") + " " +
+        ((date.getDate() < 10) ? "0"+(date.getDate())+"." : (date.getDate()+"."));
     const day = document.querySelector(".clock-day");
     day.innerText = dayInfo;
     day.style.cssText = "font-size: 200%; text-align: left;";            

@@ -5,6 +5,10 @@ const greeting = document.querySelector(".js-greetings")
 const USER_LS = "currentUser";
 const SHOWING_ON = "showing";
 
+function dynamicInput() {
+    input.size = 1;
+}
+
 function saveName(text) {
     localStorage.setItem(USER_LS, text);
 }
@@ -37,6 +41,7 @@ function loadName() {
 }
 
 function init() {
+    dynamicInput();
     loadName();
 }
 

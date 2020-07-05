@@ -1,4 +1,5 @@
 const toDoForm = document.querySelector(".js-toDoForm"),
+toDoScroll = document.querySelector(".scroll"),
 toDoInput = toDoForm.querySelector("input"),
 toDoList = document.querySelector(".js-toDoList");
 
@@ -62,8 +63,20 @@ function loadToDos() {
     } 
 }
 
+function dynamicInput() {
+    toDoInput.size = 8.5;
+    toDoInput.addEventListener('keydown', function() {
+        toDoInput.size = toDoInput.value.length > 8.5 ? toDoInput.value.length : 8.5;
+        scrollPoint();
+    });
+}
+
+function scrollPoint() {
+    toDoScroll.scrollTop = toDoScroll.scrollHeight;
+}
 
 function init() {
+    dynamicInput();
     loadToDos();
     toDoForm.addEventListener("submit", handleSubmit);
 }

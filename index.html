@@ -4,34 +4,42 @@
 
 <head>
     <title>MOMENT</title>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <link rel="stylesheet" href="css/index.css" />
 </head>
 
 <body>
-    <div class="center" style="vertical-align: middle;">
-        <div class="js-clock">
-            <h4 class="clock-day"></h4>
-            <h1>00:00</h1>
-        </div>
-        <form class='js-form form'>
-            <input type="text" placeholder="What is your name?" class="in-user"/>
-        </form>
-        <h4 class='js-greetings greetings'></h4>
-        <form class="js-toDoForm">
-            <input type="text" placeholder="Write a to do." class="in-todo"/>
-        </form>
-        <ul class='js-toDoList'></ul>
+    <header>
         <span class="js-weather"></span>
-        <script src="js/clock.js"></script>
-        <script src="js/gretting.js"></script>
-        <script src="js/todo.js"></script>
-        <script src="js/bg.js"></script>
         <script src="js/weather.js"></script>
-    </div>
-    <div class="footer">
-        <p class="Copyright">Copyright 2020. JEONG PYO YONG. All rights reserved.</p>
-    </div>
+    </header>
+    <section>
+        <div class="center" style="vertical-align: middle;">
+            <div class="js-clock">
+                <h4 class="clock-day"></h4>
+                <h1>00:00</h1>
+            </div>
+            <form class='js-form form'>
+                <input type="text" placeholder="What is your name?" class="in-user" />
+            </form>
+            <h4 class='js-greetings greetings'></h4>
+            <form class="js-toDoForm">
+                <input type="text" placeholder="Write a to do." class="in-todo" />
+            </form>
+            <div class='scroll'>
+                <ul class='js-toDoList'></ul>
+            </div>
+            <script src="js/clock.js"></script>
+            <script src="js/gretting.js"></script>
+            <script src="js/todo.js"></script>
+            <script src="js/bg.js"></script>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <p class="Copyright">Copyright 2020. JEONG PYO YONG. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
