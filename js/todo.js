@@ -47,6 +47,10 @@ function paintToDo(text) {
 function handleSubmit(event) {
     event.preventDefault();
     const currentValue = toDoInput.value;
+    if(toDos.length > 19) {
+        alert("To Do는 최대 20개까지 저장 가능합니다.");
+        return;
+    }
     if(currentValue != "") {
         paintToDo(currentValue);
         toDoInput.value = "";
